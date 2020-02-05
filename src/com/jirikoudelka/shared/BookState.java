@@ -1,4 +1,4 @@
-package com.jirikoudelka.mess;
+package com.jirikoudelka.shared;
 
 /**
  * Enum for representation of the book state.

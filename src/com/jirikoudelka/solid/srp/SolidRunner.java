@@ -1,4 +1,4 @@
-package com.jirikoudelka.solid;
+package com.jirikoudelka.solid.srp;
 
 /**
  * Runner for the presentation of the SOLID principles.
