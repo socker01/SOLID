@@ -15,7 +15,7 @@ public final class Author {
 	private final String name;
 	private final int age;
 
-	Author(String name, int age) {
+	public Author(String name, int age) {
 		this.name = Objects.requireNonNull(name);
 		this.age = age;
 	}

@@ -24,7 +24,7 @@ public final class Book implements Publication {
 	private final Date dateOfPublication;
 	private BookState bookState;
 
-	Book(String title, Author author, String genre, Date dateOfPublication, BookState bookState) {
+	public Book(String title, Author author, String genre, Date dateOfPublication, BookState bookState) {
 		this.title = Objects.requireNonNull(title);
 		this.author = Objects.requireNonNull(author);
 		this.genre = Objects.requireNonNull(genre);
