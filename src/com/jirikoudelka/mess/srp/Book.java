@@ -39,11 +39,7 @@ public final class Book {
 		calendar.setTime(dateOfPublication);
 		calendar.add(Calendar.YEAR, 5);
 
-		if (calendar.getTime().after(new Date()) && bookState == BookState.DAMAGED) {
-			return true;
-		}
-
-		return false;
+		return calendar.getTime().after(new Date()) && bookState == BookState.DAMAGED;
 	}
 
 	void inspectBook() {

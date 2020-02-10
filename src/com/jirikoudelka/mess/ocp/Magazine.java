@@ -33,11 +33,7 @@ public final class Magazine {
 		calendar.setTime(printed);
 		calendar.add(Calendar.DAY_OF_WEEK, 7);
 
-		if (calendar.getTime().after(new Date()) && period == Period.WEEKLY) {
-			return true;
-		}
-
-		return false;
+		return calendar.getTime().after(new Date()) && period == Period.WEEKLY;
 	}
 
 	void inspectMagazine() {

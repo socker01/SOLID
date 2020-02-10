@@ -48,11 +48,7 @@ public final class Magazine implements Publication{
 		calendar.setTime(printed);
 		calendar.add(Calendar.MONTH, 3);
 
-		if (calendar.getTime().after(new Date()) && period == Period.QUARTERLY) {
-			return true;
-		}
-
-		return false;
+		return calendar.getTime().after(new Date()) && period == Period.QUARTERLY;
 	}
 
 	public String getName() {

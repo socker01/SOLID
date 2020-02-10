@@ -38,11 +38,7 @@ public final class Book implements Publication {
 		calendar.setTime(dateOfPublication);
 		calendar.add(Calendar.YEAR, 5);
 
-		if (calendar.getTime().after(new Date()) && bookState == BookState.DAMAGED) {
-			return true;
-		}
-
-		return false;
+		return calendar.getTime().after(new Date()) && bookState == BookState.DAMAGED;
 	}
 
 	public String getTitle() {
